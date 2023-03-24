@@ -1,0 +1,165 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: black;
+}
+
+@font-face {
+  font-family: norseBold;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-left: min(500px, 20%);
+  margin-right: min(500px, 20%);
+}
+
+/* #region logo side*/
+.logo-side {
+  flex-grow: 1;
+  position: relative;
+  /* width: 60vw; */
+  width: 100%;
+  height: 100vh;
+  max-width: 345px;
+  /* height: 100vw; */
+  background-image: url("img/bg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.logo-side div {
+  font-family: norseBold;
+  font-size: 5rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.527);
+  line-height: 2rem;
+  /* padding: 0px 2vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-side img {
+  width: 5rem;
+  padding: 10px;
+}
+
+.logo-side p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.575);
+  position: absolute;
+  bottom: 0px;
+}
+/* #endregion */
+
+/* #region Form */
+.form-side {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 100px;
+  background-color: #eaf1f8;
+}
+
+.form-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.sign-in-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 1.2rem 2vw 3rem 2vw;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+}
+
+label {
+  position: relative;
+  width: 15rem;
+  margin-top: 15px;
+}
+
+button[type="submit"] {
+  padding: 0.8rem 1.3rem;
+  font-size: 1.3rem;
+  background-color: rgb(89,109,72);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: -1px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(71, 87, 57);
+}
+
+input {
+  font-family: customFontBold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 224, 224);
+  font-size: 0.9rem;
+  margin-top: 3px;
+}
+
+input:focus {
+  border: none;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+  outline: none;
+}
+
+input:invalid:focus {
+  border: 2px solid rgb(255, 69, 100);
+}
+
+input:focus:valid {
+  border: rgb(0, 183, 255) 2px solid;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(89,109,72);
+}
+/* #endregion */
+
+.submit-section,
+.header {
+  padding: 0px 2vw;
+}
+
+.submit-section {
+  margin-top: 2rem;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-sections {
+    display: flex;
+    gap: 50px;
+}
+
+.error {
+    font-family: customFontBold;
+    font-size: .7rem;
+    color: rgb(255, 69, 100);
+    position: absolute;
+  }
